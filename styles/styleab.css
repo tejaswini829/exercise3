@@ -1,7 +1,12 @@
 html,body{
     height: 100%;
+    font-size: 100%;
 }
 
+img{
+    max-width:100%;
+    height: auto;
+}
 body{
  -webkit-font-smoothing:antialiased;
  text-rendering: optimizeLegibility;
@@ -21,9 +26,7 @@ h6{
     letter-spacing: 0.1rem;
 }
 
-img{
-    max-width: 100%;
-}
+
 
 .blockquote{
     font-size: 1.6 rem;
@@ -35,9 +38,9 @@ img{
 .blockquote-footer{
     margin:1rem 0 0;
 }
-
+/* Staging or the hero content styling*/
 #stage{
-    background:url(../Images/stage.jpg) center center no-repeat;
+    background:url(../Images/readingbook.jpeg) center center no-repeat;
     background-size:cover;
     color:white;
     height: 100%;
@@ -46,20 +49,28 @@ img{
     align-items: center;
 
 }
-
+/*Captioning the stage*/
 #stage-caption{
-    font-size: 1.4rem;
-    font-weight:200;
+    font-size: 5.4rem;
+    font-weight:800;
     max-width: 60rem;
     margin: 0 auto;
     text-align: center;
 }
-
+/*styling header for caption*/
 #stage-caption h1{
-    color: white;
+    color:white;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: Cookie;
+    
 
+
+}
+
+.jumbotron jumbotron-fluid{
+    color: goldenrod;
+    background-color:white; 
 
 }
 
@@ -74,12 +85,12 @@ img{
 }
 
 .feature-dark{
-    background: #262f36;
-    color:white;
+    background:white;
+    color:black;
 }
 
 .feature-dark h2{
-    color: white;
+    color:#6c6f73;
 }
 
 .feature-alt{
@@ -94,8 +105,26 @@ img{
     margin-top:2 rem;
 }
 
+#carousel img{
+    width:600px;
+    height:600px;
+    position: relative;
+    margin-left:350px ;
+   
+    
+    
+}
+
+
+
+#carousel{
+  background-color: rgb(230, 166, 84)5, 255, 230);
+}
+
+
+/*footer styling*/
 #main-footer{
-    background: #263f26;
+    background:#718fa9;
     color: white;
     padding: 6rem 0;
     font-size:0.8rem;
@@ -108,6 +137,8 @@ img{
 #main-footer a{
     color: #6c5f73;
 }
+
+
 
 
 @media screen and (min-width:991px){
